@@ -7,13 +7,16 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Inherit from E10 device
-$(call inherit-product, device/elephone/E10/device.mk)
+$(call inherit-product, device/Elophone/E10/device.mk)
+
+# Inherit some common omni stuff.
+$(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_DEVICE := E10
 PRODUCT_NAME := omni_E10
