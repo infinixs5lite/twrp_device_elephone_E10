@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Inherit from E10 device
-$(call inherit-product, device/Elophone/E10/device.mk)
+$(call inherit-product, device/elophone/E10/device.mk)
 
 # Inherit some common omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
