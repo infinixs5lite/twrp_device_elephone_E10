@@ -9,6 +9,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_E10.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_E10-user \
-    omni_E10-userdebug \
     omni_E10-eng
