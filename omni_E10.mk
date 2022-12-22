@@ -4,6 +4,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/embedded.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
+# Inherit from E10 device
+$(call inherit-product, device/elephone/E10/device.mk)
+
 PRODUCT_DEVICE := E10
 PRODUCT_NAME := omni_E10
 PRODUCT_BRAND := Elephone
